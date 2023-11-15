@@ -1,5 +1,6 @@
-#ifndef SIMPLE_SHELL_H
-#define SIMPLE_SHELL_H
+#ifndef SHELL_H
+#define SHELL_H
+
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
@@ -10,8 +11,7 @@
 
 extern char **environ;
 
-int _printenv(void);
-char *_strdup(char *string);
+char *_strdup(char *st);
 int cmd_read(char *s, size_t __attribute__((unused))file_stream);
 char *pathfinder(char *cmd);
 char *_strcat(char *dest, char *src);
@@ -21,6 +21,7 @@ int _strlen(char *s);
 void print_not_found(char *cmd);
 int call_command(char *cmd_arr[]);
 char *_getenv(char *var);
-int _str_n_cmp(char *s1, char *s2, int n);
+int _str_ncmp(char *s1, char *s2, int n);
+int _printenv(void);
 
 #endif

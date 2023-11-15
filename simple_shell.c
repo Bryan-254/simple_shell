@@ -74,7 +74,7 @@ int cmd_read(char *st, size_t __attribute__((unused))getline_retval)
 	}
 	curr_arg = strtok(st, " "), x = 0;
 
-	while (token)
+	while (curr_arg)
 	{
 		cmd_array[x++] = token;
 		curr_arg = strtok(NULL, " ");
@@ -124,7 +124,7 @@ int call_thecommand(char *cmd_array[])
 		perror("Error:");
 		return (-1);
 	}
-	if (is_child > 0)
+	if (child_pid > 0)
 	{
 		wait(&status_exit);
 	}

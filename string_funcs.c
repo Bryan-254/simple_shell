@@ -1,4 +1,4 @@
-#include "simple_shell.h"
+#include "shell.h"
 
 /**
  * *_strcat- This function concatenates two strings.
@@ -106,7 +106,7 @@ char *_strdup(char *st)
 		return (NULL);
 	}
 
-	while (str[leng])
+	while (st[leng])
 	{
 		leng++;
 	}

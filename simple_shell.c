@@ -76,7 +76,7 @@ int cmd_read(char *st, size_t __attribute__((unused))getline_retval)
 
 	while (curr_arg)
 	{
-		cmd_array[x++] = token;
+		cmd_array[x++] = curr_arg;
 		curr_arg = strtok(NULL, " ");
 	}
 	cmd_array[x] = NULL;

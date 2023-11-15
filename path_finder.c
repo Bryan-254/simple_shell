@@ -12,7 +12,7 @@ char *pathfinder(char *cmd)
 {
 	char *pathVar = _strdup(_getenv("PATH"));
 	int x = 0, y = 0;
-	char *token_pathstr = strtok(path, ":");
+	char *token_pathstr = strtok(pathVar, ":");
 	char *path_arr[100];
 	char *s2 = cmd;
 	char *new_pathVar = NULL;

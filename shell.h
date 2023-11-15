@@ -11,17 +11,18 @@
 
 extern char **environ;
 
-char *_strdup(char *st);
-int cmd_read(char *s, size_t __attribute__((unused))file_stream);
+int _printenv(void);
+int _str_ncmp(char *s1, char *s2, int n);
+char *_getenv(char *var);
 char *pathfinder(char *cmd);
+int main(int argc, char *argv[]);
+int cmd_read(char *st, size_t __attribute__((unused))getline_retval);
+void print_cmdnotfound(char *cmd);
+int call_thecommand(char *cmd_array[]);
 char *_strcat(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
-void print_not_found(char *cmd);
-int call_command(char *cmd_arr[]);
-char *_getenv(char *var);
-int _str_ncmp(char *s1, char *s2, int n);
-int _printenv(void);
+char *_strdup(char *st);
 
 #endif

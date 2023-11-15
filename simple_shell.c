@@ -2,7 +2,7 @@
 char *name;
 
 /**
- * main - Function will print prompt, handle End of File & read file_stream
+ * main - Function will print prompt, handle End of File & read getline_retval
  * @argc: This parameter is the arg count (not needed hence void attached)
  * @argv: This parameter is the argv for command
  * Return: zero
@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
  * cmd_read - This function the handles command line and then tokenizes it
  * @st: This parameter is the string
  * @getline_retval: This parameter is the getline input
- * Return: 0
+ * Return: results of call_thecommand function
  */
 
 int cmd_read(char *st, size_t __attribute__((unused))getline_retval)

@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * pathfinder - Function takes PATH string, tokenizes the sting,
- * then concatenates with "/" & cmd
+ * pathfinder - This function takes the PATH string, tokenizes the string,
+ * then concatenates with the "/" & cmd.
  * @cmd: This parameter is command passed from getline in main
  *
- * Return: new_path for use in cmd_read
+ * Return: new_pathVar for use in cmd_read or NULL
  */
 
 char *pathfinder(char *cmd)

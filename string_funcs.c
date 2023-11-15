@@ -5,7 +5,7 @@
  * @dest: This parameter is the string of destination
  * @src: This parameter is the string of source
  *
- * Return: Always 0.
+ * Return: dest.
  */
 
 char *_strcat(char *dest, char *src)
@@ -51,7 +51,7 @@ int _strcmp(char *s1, char *s2)
  * @dest: This parameter is the new string
  * @src: This parameter is the original string
  *
- * Return: Always 0.
+ * Return: dest.
  */
 
 char *_strcpy(char *dest, char *src)
